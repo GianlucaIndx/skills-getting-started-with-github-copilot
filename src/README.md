@@ -25,6 +25,26 @@ A super simple FastAPI application that allows students to view and sign up for 
    - API documentation: http://localhost:8000/docs
    - Alternative documentation: http://localhost:8000/redoc
 
+## Testing
+
+- Backend tests are located in `tests/backend/`.
+- Use the AAA pattern in every test:
+   - Arrange: prepare input data and preconditions.
+   - Act: execute one operation.
+   - Assert: verify the expected behavior.
+
+Run all tests:
+
+```
+pytest
+```
+
+Run only backend tests:
+
+```
+pytest tests/backend -m backend
+```
+
 ## API Endpoints
 
 | Method | Endpoint                                                          | Description                                                         |
